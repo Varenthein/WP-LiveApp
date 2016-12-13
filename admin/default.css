@@ -1,0 +1,998 @@
+
+/*wordpress smieci */
+
+.update-nag, #footer-thankyou, #footer-upgrade {
+display:none !important;
+}
+
+
+.doPrzodu {
+position:absolute;
+top:110px;
+right:0px;
+z-index:3;
+cursor:pointer;
+}
+.live  i {
+position:absolute;
+bottom:-10px;
+left:130px;
+background:#d82824 none repeat scroll 0 0;
+padding:3px 10px;
+color:#fff;
+font-size:12px;
+}
+.doTylu {
+position:absolute;
+top:110px;
+left:0px;
+z-index:3;
+cursor:pointer;
+}
+.live {
+margin:5px 0px;
+width:200%;
+}
+.live h3 {
+font-family:Oswald;
+font-style:italic;
+opacity:0.7;
+margin:5px 0px;
+font-size:12pt;
+}
+.live a {
+display:inline-block;
+vertical-align:top;
+border:1px solid #e8e8e8 !important;
+width:310px;
+text-align:center;
+background:#fff;
+min-height:105px;
+position:relative;
+}
+.live a.status-2 div.ktozkim span {
+font-style:normal;
+color:#d82824;
+opacity:1.0;
+font-family:Oswald;
+}
+.live a div {
+display:inline-block;
+vertical-align:top;
+padding:3px;
+}
+.live a img {
+width:50px;
+height:50px;
+border-radius:100%;
+border:3px solid #e8e8e8;
+}
+.live a div.ktozkim {
+padding:10px 5px;
+font-family:Oswald;
+font-size:12pt;
+text-transform:uppercase;
+}
+.live a h4 {
+background: #d82824 none repeat scroll 0 0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1) inset;
+    color: #fff;
+    display: block;
+    font-family: Oswald;
+    font-size: 11pt;
+    font-weight: light;
+    margin: 0px auto;
+    padding: 4px 10px;
+    position: relative;
+    text-align: center;
+}
+.live a div.ktozkim span {
+display:block;
+font-family:Arial;
+font-style:italic;
+opacity:0.7;
+text-transform:none;
+font-size:10pt;
+margin:5px 0px;
+text-align:center;
+width:100%;
+}
+
+
+/* Relacje lista */
+
+.MiniMecz {
+width:650px;
+margin:0 auto;
+margin-top:10px;
+font-size:14pt;
+background:#e8e8e8;
+border-radius:50px;
+height:50px;
+}
+.MiniMecz td {
+display:inline-block;
+max-height:50px;;
+}
+.MiniMecz td:not(.herb) {
+padding-top:10px;
+} 
+.MiniMecz td.wynik {
+padding:5px;
+}                      
+.MiniMecz td.wynik div {
+background:#d82824;
+border-radius:5px;
+height:40px;
+width:65px;
+color:#fff;
+text-align:center;
+padding-top:5px;
+}
+.MiniMecz td.team {
+width:237px;
+padding:10px;
+}
+.MiniMecz .herb  { width:50px;  }
+.small .MiniMecz .herb img{
+width:50px;
+height:50px;
+border-radius:100%;
+border:2px solid #e8e8e8;
+}
+
+a.small .MiniMecz td img.Logo {
+max-height:50px;
+width:auto;
+height:auto;
+margin-top:-10px;
+}
+
+/* KONIEC RELAJE LSITA*/
+
+.Fog {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+z-index:2000;
+background:rgba(0,0,0,0.5);
+display:none;
+}
+.Fog .WpisEditor {
+margin:0 auto;
+margin-top:100px;
+width:800px;
+height:800px;
+padding:20px;
+background:#fff;
+border-radius:10px;
+border:1px solid #e8e8e8;
+}
+/*div > div.DruzynowkaTeam:nth-of-type(4n) {
+  margin-bottom:10px;
+}   */
+div > div.CoDrugi:nth-of-type(2n) {
+  margin-bottom:10px;
+}  
+#BoiskoForm table tr td {
+padding-right:20px;
+}
+#boisko, #boisko h3 {
+color:#fff;
+position:relative;
+}
+#boisko {
+box-shadow:inset 0 0 30px rgba(0,0,0,0.4);
+overflow:hidden;
+position:relative;
+margin:0px 0px 15px 0px;
+cursor:default;
+text-shadow:0 0 5px rgba(0,0,0,0.9);
+width:375px;
+height:543px;
+}
+#boisko .Czerwona, #boisko .Druga-zolta, #boisko .Dyskwalifikacja {
+opacity:0.7
+}
+#boisko .player, .judge {
+color:#fff;
+font-family:Arial;
+font-size:10pt;
+max-width:200px;
+min-width:65px;
+z-index:3;
+text-align:center;
+display:inline-block;
+padding-top:38px;
+position:relative;
+}
+#boisko .player .nr {
+width:100%;
+text-align:center;
+font-family:Oswald;
+font-size:9pt;
+position:absolute;
+top:15px;
+left:0px;
+text-shadow:none;
+color:#ff0000;
+}
+.rezerwowi h4 {
+text-align:center;
+margin:10px;
+font-size:13pt;
+}
+.rezerwowi .player.rez.polska {
+background:#ffa8a6 !important;
+}
+.player.rez.shirt {
+background:url('img/CzerwonyShirt.png') no-repeat left top;
+}
+#boisko .player {
+background:url('img/BialyShirt.png') no-repeat center top;
+}
+#boisko .Czerwonyshirt {
+background:url('img/CzerwonyShirt.png') no-repeat center top;
+}
+#boisko .Pomaranczowyshirt {
+background:url('img/PomaranczowyShirt.png') no-repeat center top;
+}
+#boisko .Niebieskishirt {
+background:url('img/NiebieskiShirt.png') no-repeat center top;
+}
+#boisko .Zoltyshirt {
+background:url('img/ZoltyShirt.png') no-repeat center top;
+}
+#boisko .Zielonyshirt {
+background:url('img/ZielonyShirt.png') no-repeat center top;
+}
+#boisko .Bialyshirt {
+background:url('img/BialyShirt.png') no-repeat center top;
+}
+#boisko .Fioletowyshirt {
+background:url('img/FioletowyShirt.png') no-repeat center top;
+}
+#boisko .Rozowyshirt {
+background:url('img/RozowyShirt.png') no-repeat center top;
+}
+#boisko .Brazowyshirt {
+background:url('img/BrazowyShirt.png') no-repeat center top;
+}
+#boisko .Szaryshirt {
+background:url('img/SzaryShirt.png') no-repeat center top;
+}
+.judge {
+color:#000;
+margin:5px;
+}
+#boisko .Czarnyshirt {
+background:url('img/CzarnyShirt.png') no-repeat center top;
+}
+#boisko .Czerwonyshirt .nr, #boisko .Zielonyshirt .nr, #boisko .Niebieskishirt .nr, #boisko .Czarnyshirt .nr, #boisko .Brazowyshirt .nr, #boisko .Rozowyshirt .nr, #boisko .Fioletowyshirt .nr  {
+color:#fff;
+}
+#boisko .Zoltyshirt .nr, #boisko .Pomaranczowyshirt .nr, #boisko .Szaryshirt .nr {
+color:#000;
+}
+#boisko span {
+font-size:10pt;
+display:inline-block;
+}
+#boisko .rez {
+margin:15px;
+position:absolute;
+bottom:0px;
+left:0px;
+}
+.rezerwowi .rez .nr {
+display:inline-block;
+width:25px;
+text-align:right;    
+padding-right:8px;
+}
+#boisko .player.ui-draggable-dragging {
+text-shadow:0 0 20px #000;
+}
+table a {
+cursor:pointer;
+}
+.DodajWpisTextarea {
+width:800px;
+}
+.Live_kartka {
+width:15px;
+height:15px;
+position:Relative;
+top:2px;
+margin-right:3px;
+}
+.Live_Stadion {
+border:10px solid #fff;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
+margin:5px;
+} 
+.Live_pkt {
+width:15px;
+height:15px;
+position:Relative;
+top:4px;      
+}
+.kartka {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+text-align:center;
+}
+.kartka img{
+margin-right:45px;
+}
+#WpisForm input[type=radio] {
+margin-left:10px;
+margin-right:5px;
+}
+
+.rez .Live_pkt {
+position:absolute;
+top:5px;
+width:18px;
+height:18px;
+margin-left:8px;
+}
+.rez .Live_pkt.nPkt {
+position:relative;
+top:2px;
+margin-left:3px;
+height:18px;
+margin-bottom:-3px;
+}
+.sklad span {
+margin:0px; padding:0px;
+}
+table tr td {
+vertical-align:top;
+}
+h2.widget-title.buts {
+margin:0px 0px 10px 0px;
+padding:0px;
+}
+h2.widget-title.buts a {
+display:inline-block;
+padding:5px 40px;
+cursor:pointer;
+border-right:1px solid #fff;
+}
+h2.widget-title.buts.four {
+background:#fff;
+border:1px solid #ccc;
+}
+img.flaga {
+width:17px;
+height:17px;
+border-radius:100%;
+position:relative;
+top:0px;
+}
+h2.widget-title.buts.four a {
+/*padding:4px 20px;
+background:#e8e8e8;color:#000;
+font-size:11pt;
+font-weight:normal;
+font-family:Arial;    */
+margin:5px 0px;
+padding: 0 7px;
+border-right: 1px solid #000;
+font-family:Arial;  
+color:#000;
+text-transform:none;
+font-size:12px;
+}
+h2.widget-title.buts a:last-child {
+border-right:none;
+}
+h2.widget-title.buts a:hover {
+background:#fff;
+color:#000;
+}
+
+.rez h3 {
+font-size:12pt;
+font-weight:bold;
+margin-bottom:10px;
+}
+.rezerwowi {
+padding:0px 10px;
+width:400px;
+}
+.rezerwowi .rez {
+width:100%;
+font-family:Arial;
+min-height:30px;
+padding:5px 10px;
+font-family:Arial;
+font-size:11pt;
+position:relative;
+}
+.rezerwowi .rez td, .rezerwowi thead td, .rezerwowi tfoot td {
+padding:8px 10px;
+}
+.rezerwowi thead td {
+//background:#e8e8e8;
+color:#fff;
+background:#d82824;
+
+}
+.rezerwowi tfoot td {
+background:#000;
+color:#fff;
+}
+.rezerwowi .rez td.pozycja {
+text-align:right;
+width:30px;
+}
+
+/* Skoki table */
+
+h2.widget-title.kole a {
+width:180px;
+background:#e8e8e8;
+color:#000;
+margin-left:20px;
+//text-align:left;
+padding:5px 10px;
+}
+h2.widget-title.kole a:last-child {
+margin-left:1px;
+margin-right:0px;
+}
+h2.widget-title.kole a:first-of-type {
+margin-right:20px;
+}
+td.TdRownaj {
+text-align:center;
+}
+td.TdRownaj a {
+display:block;
+width:55px;
+text-align:right;
+margin:0 auto;
+}
+.rezerwowi #sl3 table .rez td.TdRownaj a {
+width:35px;
+}
+
+/* End of skok table */
+
+.rezerwowi #sl1 table .rez:nth-child(2n+2), .rezerwowi #sl3 table .rez:nth-child(2n+2) {
+background: #e8e8e8;
+}
+.rezerwowi #sl3 table .rez td {
+ background: #e8e8e8;
+ border-bottom:1px solid #fff;
+}
+.rezerwowi #sl2 table .rez:nth-child(2n+1), .rezerwowi #sl6 table .rez:nth-child(2n+1), .rezerwowi #sl7 table .rez:nth-child(2n+1)  {
+background: #e8e8e8;
+}
+
+
+.rezerwowi h3 {
+background: #e8e8e8;
+font-size:11pt;
+font-weight:bold;
+text-transform:uppercase;
+padding:8px 15px;
+width:100%;
+}
+.rezerwowi i {
+display:block;
+margin:5px;
+}
+.rezerwowi h3 span {
+float:right;
+text-transform:none;
+font-weight:normal;
+font-size:10pt;
+}
+
+#boisko .rez.zmiana {
+background:url('img/Zmiana.png') no-repeat;
+text-indent:25px;
+
+}
+.rezerwowi .rez.zmiana img {
+position:absolute;
+margin-left:10px;
+top:2px;
+}
+
+#crestashareiconincontent div:last-child {
+display:none !important;
+}
+
+.LiveApp-share {
+height:70px;
+width:760px;
+}
+.LiveApp-share h3 {
+font-size:15pt;
+display:inline-block;
+vertical-align:middle;
+font-family:Oswald;
+margin-right:20px;
+}     
+#crestashareiconincontent {
+display:inline-block;
+vertical-align:middle;
+}
+.player.rez span.name {
+display:inline-block;width:110px;vertical-align:top;
+}
+.player.rez span.pkt {
+display:inline-block;width:40px;float:right;text-align:right;vertical-align:top;
+}
+.player.rez span.pkt.long {
+width:60px;
+position:relative;
+}
+.player.rez span.pkt.long img {
+position:absolute;
+top:0px;
+left:0px;
+margin-right:5px;
+height:18px;
+}
+.wpisy .wpis p {
+display:inline;
+}
+.wpisy .wpis.Special, .wpisy .wpis.karny, .wpisy .wpis.Czerwona, .wpisy .wpis.Gol, .wpisy .wpis.Druga-zolta, .wpisy .wpis.Kara, .wpisy .wpis.Dyskwalifikacja      {
+font-weight:bold;
+}
+.wpisy .wpis.Foul, .wpisy .wpis.TimeSkoki  {
+font-style:italic;
+font-weight:bold;
+}
+.wpisy .wpis.GospSet, .wpisy .wpis.GoscSet {
+font-style:italic;
+font-weight:bold;
+}
+.wpisy .wpis.Foul .min, .wpisy .wpis.GospSet .min, .wpisy .wpis.GoscSet .min {
+display:none;
+}
+.wpisy .wpis img.Live_Icon  {
+max-height:20px;
+margin:0 5px 0px 0px; 
+position:relative;
+top:6px;
+}
+.wpisy .wpis img.Live_Icon.rounded {
+border-radius:100%;
+border:3px solid #e9e9e9;
+height:20px;
+width:20px;
+} 
+#boisko .goals {
+display:inline-block;
+width:0px;
+position:relative;
+text-align:left;
+vertical-align:top;
+top:-2px;
+}
+#boisko .goals div {
+position:absolute;
+top:0px;
+left:0px;
+width:70px;
+}
+.adminWpisy .wpis {
+padding:20px !important;
+border-radius:10px;
+border:1px solid #e8e8e8;
+line-height:150%;
+}
+.rezerwowi table {
+border:1px solid #e9e9e9;
+}
+#sl1 table, #sl2 table {
+margin-bottom:15px;
+}
+ #WpisForm select  {
+width:150px;
+
+}
+#WpisForm .button-primary, #WpisForm .button {
+margin-top:7px !important;
+}
+.rezerwowi .rez span {
+display:inline-block;
+vertical-align:top;
+width:30px;
+text-align:left;
+margin-left:4px;
+}
+
+/* Mecz */
+
+.mecz header, .wpisy .wpis header, .wp_content header{
+//min-height:120px;
+line-height:normal !important;
+padding:0px !important;
+}
+.wpisy .wpis header div.miejsce, .wp_content header div.miejsce {
+width:100%;
+padding:5px 20px;
+font-family:Arial;
+color:#fff;
+background:#d82824;
+margin-bottom:1px;
+font-size:12pt;
+}
+.wp_content header {
+margin-bottom:20px;
+margin-top:20px;
+width:750px;
+clear:both;
+height:100px;
+}
+.wp_content header div.team {
+width:220px;
+}
+
+.mecz header div, .wpisy header div, .wp_content header div {
+display:inline-block;
+vertical-align:top;
+font-size:25pt;
+font-family:Oswald;
+padding:20px 10px 10px 10px;
+}
+.mecz header div.team, .wpisy header div.team{
+width:230px;
+}
+.mecz div.team.gosp, .wpisy div.team.gosp, .wp_content div.team.gosp {
+text-align:right;
+}
+.mecz header div.herb, .wpisy header div.herb, .wp_content header div.herb {
+width:70px;
+overflow:hidden;
+padding:0px;
+padding-top:10px;     
+}
+h2.blogtitle span {
+display:block;
+margin:25px 0px 10px 85px;
+font-size:27pt;
+}
+h2 .avatar {
+width:70px;
+height:70px;
+float:left;
+border:3px solid #e9e9e9;
+border-radius:100%;
+margin:10px 5px 5px 0px;
+}
+.mecz header div.herb img, .wpisy header div.herb img, .wp_content header div.herb img {
+width:70px; 
+height:70px;
+border-radius:100%;
+border:3px solid #e9e9e9
+}
+
+.wpisy {
+font-family:Arial;
+font-size: 11pt;
+width: 750px;
+margin-top:10px;
+}
+.wpisy .wpis {
+background:#fff;
+border-bottom: 1px solid #e9e9e9;
+padding:10px 0px 15px 0px;
+margin:5px 0px;
+line-height:150%;
+}
+.wpisy .wpis b.min {
+display:inline-block;
+min-width:30px;
+font-weight:bold;
+margin-right:5px;
+}
+.wpisy .wpis img {
+max-width:750px;
+margin:5px 0px;
+}
+.wpisy .wpis .Live_img {
+position:relative;
+top:10px;
+width:20px;
+height:20px;
+margin-right:5px;
+}
+.wpisy .wpis .Live_info {
+margin:10px 0px;
+}
+.wpisy .wpis .Live_info .label {
+display:inline-block;
+margin-bottom:10px;
+}
+.wyniki.bigRes .team {
+width:300px;
+}
+
+.mecz div.goal .wyn, .wpisy div.goal .wyn, .wp_content header div.goal .wyn {
+background:#d82824;
+width:100%;
+text-align:center;
+padding:0px;   
+margin:0px;
+color:#fff;
+min-height:46px;
+}
+.mecz div.goal, .wpisy div.goal, .wp_content header div.goal {
+width:120px;
+text-align:center;
+padding:0px;
+margin:-2px 5px 0px 5px;
+color:#fff;
+position:relative;
+min-height:70px;      
+}
+.mecz div.sety, .wpisy  div.sety, .wp_content div.sety {
+position:relative;
+margin:0px;
+margin-top:-2px;
+padding:0px;
+text-align:left;
+background:none;
+width:100%;
+overflow:hidden;  
+}
+.mecz div.sety span b, .wpisy div.sety span b, .wp_content header div.sety span b {
+font-weight:normal;
+opacity:0.8;
+display:inline-block;
+vertical-align:top;
+width:35px;
+text-align:left;
+margin-left:15px;
+}
+.mecz div.longSet span, .wpisy div.longSet span, .wp_content header div.longSet span  {
+display:inline-block !important;
+margin:0 auto !important;
+width:auto !important;
+padding:5px 10px !important;
+vertical-align:top;
+}
+.mecz div.goal span, .wpisy div.goal span, .wp_content header div.goal span {
+display:block;
+width:120px;
+background: #e8e8e8;
+color:#000;
+font-size:10pt;
+padding:2px 0px;
+}   
+.mecz div.goal .podGol.sety, .wpisy div.goal .podGol.sety, .wp_content div.goal .podGol.sety {
+text-align:center;
+background:#fff;
+position:relative;
+overflow:visible;
+}  
+.mecz div.goal .podGol.sety .sets, .wpisy div.goal .podGol.sety .sets, .wp_content div.goal .podGol.sety .sets {
+position:absolute;
+text-align:center;
+top:0px;
+left:-70px;
+width:260px;
+padding:0px;
+margin:0px;
+}
+
+.mecz div.goal .podGol.sety span.set, .wpisy div.goal .podGol.sety span.set, .wp_content div.goal .podGol.sety span.set{
+ margin:20px 3px 3px 3px;
+ padding:5px 15px;
+ background: #e8e8e8;
+ display:inline-block;
+ width:auto;
+ min-width:35px;
+ height:30px;
+ border-radius:5px;
+ text-align:center;
+ border:none;
+ position:relative;
+ 
+} 
+.mecz div.goal .podGol.sety span.set i, .wpisy div.goal .podGol.sety span.set i, .wp_content div.goal .podGol.sety span.set i {
+position:absolute;
+top:-14px;
+left:0px;
+font-size:6pt;
+font-style:normal;
+width:100%;
+text-align:center;
+color:#000;
+}
+.mecz div.goal .podGol.sety span.set b, .wpisy div.goal .podGol.sety span.set b, .wp_content div.goal .podGol.sety span.set b {
+display:inline;
+color:#d82824;
+margin:0px;
+font-weight:normal;
+}
+.mecz div.goal .podGol.sety span.set.actualSet, .wpisy div.goal .podGol.sety span.set.actualSet, .wp_content div.goal .podGol.sety span.set.actualSet    {
+background:#d82824;
+color:#fff;
+}
+.mecz div.goal .podGol.sety span.set.actualSet b, .wpisy div.goal .podGol.sety span.set.actualSet b, .wp_content div.goal .podGol.sety span.set.actualSet b{
+color:#fff;
+font-weight:normal;
+}
+
+.mecz div.goal .podGol, .wpisy div.goal .podGol, .wp_content  div.goal .podGol {
+//position:absolute;
+//top:52px;//left:0px;
+width:100%;
+background: #e8e8e8;
+color:#000;
+font-size:9pt;
+padding:2px 0px;
+margin-top:1px;
+position:Relative;
+z-index:3;
+}
+.mecz div.goal .podGol a, .wpisy div.goal .podGol a, .wp_content div.goal .podGol a {
+background:#d82824;
+color:#fff;
+display:block;
+width:100%;
+cursor:pointer;
+position:relative;
+top:3px;
+border-radius:0px 0px 5px 5px;
+}
+.mecz div.goal .podGol span, .wpisy div.goal .podGol span, .wp_content div.goal .podGol span {
+border-bottom:1px solid #fff;
+width:100%;
+}
+.mecz div.goal .podGol span:last-of-type, .wpisy div.goal .podGol span:last-of-type, .wp_content div.goal .podGol span:last-of-type {
+border-bottom:none;
+} 
+.mecz .Live-data {
+text-align:center;width:100%;
+margin:20px 0px;
+padding:5px 10px;
+background:#e8e8e8;
+opacity:0.7;
+border-bottom:1px solid #D4D4D4;
+}
+.relInfo {
+text-align:center;
+
+}
+.relInfo .logo {
+max-height:70px;
+}
+.relInfo h3 {
+font-family:Oswald;
+font-size:17pt;
+margin:10px;
+}
+.relInfo .restInfo {
+color:#d82824;
+font-size:11pt;
+font-weight:bold;
+margin-bottom:10px;
+}
+.wpisy .wpis.GemDlaGosp b.min, .wpisy .wpis.GemDlaGosc b.min  {
+display:none;
+}
+.wpisy .wpis.GemDlaGosp, .wpisy .wpis.GemDlaGosc, .wpisy .wpis.SetDlaGosc, .wpisy .wpis.SetDlaGosp  {
+font-weight:bold;
+background:rgba(232,232,232,0.7);
+border-radius:10px;
+padding-left:10px;
+}
+
+
+
+/*
+
+    Zebra_DatePicker: a lightweight jQuery date picker plugin
+
+    Default theme
+
+    copyright (c) 2011 - 2014 Stefan Gabos
+    http://stefangabos.ro/jquery/zebra-datepicker/
+
+*/
+
+.Zebra_DatePicker *,
+.Zebra_DatePicker *:after,
+.Zebra_DatePicker *:before  { -moz-box-sizing: content-box !important; -webkit-box-sizing: content-box !important; box-sizing: content-box !important }
+
+.Zebra_DatePicker           { position: absolute; background: #666; border: 3px solid #666; z-index: 100; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 13px; }
+
+.Zebra_DatePicker *         { margin: 0; padding: 0; color: #000; background: transparent; border: none }
+
+/* = GLOBALS
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker table                      { border-collapse: collapse; border-spacing: 0; width: auto; table-layout: auto; }
+
+.Zebra_DatePicker td,
+.Zebra_DatePicker th                         { text-align: center; padding: 5px 0 }
+
+.Zebra_DatePicker td                         { cursor: pointer }
+
+.Zebra_DatePicker .dp_daypicker,
+.Zebra_DatePicker .dp_monthpicker,
+.Zebra_DatePicker .dp_yearpicker             { margin-top: 3px }
+
+.Zebra_DatePicker .dp_daypicker td,
+.Zebra_DatePicker .dp_daypicker th,
+.Zebra_DatePicker .dp_monthpicker td,
+.Zebra_DatePicker .dp_yearpicker td         { background: #E8E8E8; width: 30px; border: 1px solid #7BACD2 }
+
+.Zebra_DatePicker,
+.Zebra_DatePicker .dp_header .dp_hover,
+.Zebra_DatePicker .dp_footer .dp_hover { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
+
+/* = VISIBLE/HIDDEN STATES (USE TRANSITIONS FOR EFFECTS)
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker.dp_visible               { display: block; visibility: visible; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1; opacity: 1; transition: opacity 0.2s ease-in-out }
+.Zebra_DatePicker.dp_hidden                { display: none; visibility: hidden; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0; opacity: 0 }
+
+/* = HEADER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_header td             { color: #FFF }
+
+.Zebra_DatePicker .dp_header .dp_previous,
+.Zebra_DatePicker .dp_header .dp_next       { width: 30px }
+
+.Zebra_DatePicker .dp_header .dp_caption    { font-weight: bold }
+.Zebra_DatePicker .dp_header .dp_hover      { background: #222; color: #FFF }
+
+/* = DATEPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_daypicker th              { background: #FFCC33 }
+.Zebra_DatePicker td.dp_not_in_month            { background: #F3F3F3; color: #CDCDCD; cursor: default }
+.Zebra_DatePicker td.dp_not_in_month_selectable { background: #F3F3F3; color: #CDCDCD; cursor: pointer }
+.Zebra_DatePicker td.dp_weekend                 { background: #D8D8D8 }
+.Zebra_DatePicker td.dp_weekend_disabled        { color: #CCC; cursor: default }
+.Zebra_DatePicker td.dp_selected                { background: #5A4B4B; color: #FFF !important }
+.Zebra_DatePicker td.dp_week_number             { background: #FFCC33; color: #555; cursor: text; font-style: italic }
+
+/* = MONTHPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_monthpicker td    { width: 33% }
+
+/* = YEARPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_yearpicker td     { width: 33% }
+
+/* = FOOTER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_footer            { margin-top: 3px }
+.Zebra_DatePicker .dp_footer .dp_hover  { background: #222; color: #FFF }
+
+/* = SELECT CURRENT DAY
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_today { color: #FFF; padding: 3px }
+
+/* = CLEAR DATE
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_clear { color: #FFF; padding: 3px }
+
+/* = SOME MORE GLOBALS (MUST BE LAST IN ORDER TO OVERWRITE PREVIOUS PROPERTIES)
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker td.dp_current             { color: #C40000 }
+.Zebra_DatePicker td.dp_disabled_current    { color: #E38585 }
+.Zebra_DatePicker td.dp_disabled            { background: #F3F3F3; color: #CDCDCD; cursor: default }
+.Zebra_DatePicker td.dp_hover               { background: #482424; color: #FFF }
+
+/* = ICON
+----------------------------------------------------------------------------------------------------------------------*/
+button.Zebra_DatePicker_Icon                { display: block; position: absolute; width: 16px; height: 16px; background: url('calendar.png') no-repeat left top; text-indent: -9000px; border: none; cursor: pointer; padding: 0; line-height: 0; vertical-align: top }
+button.Zebra_DatePicker_Icon_Disabled       { background-image: url('calendar-disabled.png') }
+
+/* don't set vertical margins! */
+button.Zebra_DatePicker_Icon                { margin: 0 0 0 3px }
+button.Zebra_DatePicker_Icon_Inside         { margin: 0 3px 0 0 }
